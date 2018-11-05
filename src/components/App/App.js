@@ -17,10 +17,7 @@ export default class App extends Component {
       this.createTodoItem("Make Awesome App"),
       this.createTodoItem("Have a luch")
 
-      /*{ label: "Drink Coffee", important: false, id: 1, done:false },
-      { label: "Make Awesome App", important: true, id: 2, done:false},
-      { label: "Have a luch", important: false, id: 3, done:false}
-      */
+      
     ],
 
     term: "",
@@ -43,7 +40,7 @@ export default class App extends Component {
       // const before = todoData.slice(0, idx);
       //const after = todoData.slice(idx + 1);
 
-      // const newArray = [...before, ...after]; //спрэд оператор
+      // const newArray = [...before, ...after]; 
       const newArray = todoData.filter(el => el.id !== id);
       return {
         todoData: newArray
@@ -73,7 +70,7 @@ export default class App extends Component {
        //update object
        const idx = arr.findIndex((el) => el.id === id);
        const oldItem = arr[idx];
-       const newItem = {...oldItem,  //object spread оператор
+       const newItem = {...oldItem,  //
        [propName]: !oldItem[propName]}; // done: !oldItem.done}
        //construct new array
         return [
