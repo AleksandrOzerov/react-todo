@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 import "./todoListItem.css";
-/* в props приходят артибуты label из App.js
 
-const TodoListItem = (props)=>{ 
-     return(
-        <span>{props.label}</span>
-    );
-};
-Ниже будет анологичный код, но с деструкторизацией объекта. Значения сразу пойдут в перменную label
-*/
 
 export default class TodoListItem extends Component {
 
